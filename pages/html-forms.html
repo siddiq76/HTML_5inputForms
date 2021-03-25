@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Basic input types</title>
+    <link rel="stylesheet" href="../styles/html-forms.css">
+</head>
+
+<body>
+    <form>
+        <header class="headerContainer">
+            <h1>HTML 5 Form Input File</h1>
+        </header>
+        <div>
+            <label for="text">Name: </label>
+            <input type="text" id="text" name="text">
+            <error-output class="text-class" for="text"></error-output>
+        </div>
+        <div>
+            <label for="pwd">Password: </label>
+            <input type="password" id="pwd" name="pwd">
+            <error-output class="pwd-class" for="pwd"></error-output>
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email">
+            <error-output class="email-class" for="email"></error-output>
+        </div>
+        <div>
+            <label for="url">URL: </label>
+            <input type="url" id="url" name="url">
+        </div>
+        <div>
+            <label for="number">Number: </label>
+            <input type="number" id="number" name="number">
+        </div>
+        <div>
+            <label for="tel">Phone No: </label>
+            <input type="tel" id="tel" name="tel">
+            <error-output class="phone-class" for="tel"></error-output>
+        </div>
+        <div>
+            <label for="search">Search for: </label>
+            <input type="search" id="search" name="search">
+        </div>
+        <div class="nativeDateTimePicker">
+            <label for="party">Date of Birth: </label>
+            <input type="datetime-local" id="party" name="bday">
+            <span class="validity"></span>
+        </div>
+        <div>
+            <label for="salary">Salary: </label>
+            <input type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
+            <output class="salary-output" for="salary">400000</output>
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+    <script src="../scripts/html-form.js"></script>
+</body>
+
+</html>
